@@ -1,0 +1,88 @@
+<html>
+<h1>Green Earth Foundation</h1>
+<img src="green-earth.png" class="logo">
+<h2>About</h2>
+   <h3>Established in 1998, Green Earth Foundation has been at the forefront of environmental conservation efforts for over two decades. Our organization is committed to addressing pressing environmental challenges such as deforestation, habitat loss, climate change, and species extinction through innovative programs and collaborative partnerships.</h3>
+   <h2>Volunteer Opportunities</h2>
+   
+   <h3> Tree Planting Volunteer: Join us in planting trees to restore degraded landscapes and combat climate change.
+    Wildlife Monitoring Volunteer: Assist our team in monitoring and studying wildlife populations to inform conservation efforts.
+    Environmental Education Volunteer: Educate communities about the importance of nature conservation and sustainable living practices.</h3>
+
+   
+    <button id="showFormButton" class="showFormButton">Volunteer Now</button>
+
+    <div id="contactFormContainer" style="display: none;">
+        <form id="contactForm" action="thank.html">
+            <div>
+                <label for="fname"> First Name:</label>
+                <input type="text" id="fname" placeholder="John" required></input>
+                </div>
+                <br>
+                <div>
+                <label for="lname"> Last Name:</label>
+                <input type="text" id="lname" placeholder="Smith" required></input>
+                </div>
+                <br>
+                <div>
+                <label for="email"> Email:</label>
+                <input type="email" id="email" placeholder="johnsmith@gmail.com" requried></input>
+                </div>
+                <br> 
+                <div>
+                    <label for="phone"> Phone #:</label>
+                    <input type="tel" id="phone" placeholder="(123)-456-7890" requried></input>        
+                </div>
+                <div>
+                        <input type="submit" onclick="openPopup()">
+                <div class="popup" id="popup">
+                    <img src="tick.png">
+                    <h2>Thank You</h2>
+                    <p>Thank you for submitting your contact information to volunteer with us!</p>
+                    <button type="button" onclick="closePopup()">Ok</button>
+
+
+
+
+                </div>
+                </a>
+        </form>
+    </div>
+
+    
+
+    <script src="charity_profile.js"></script>
+    <script>
+    let popup = document.getElementById("popup")
+    
+    function openPopup(){
+        popup.classList.add("open-popup");
+
+}
+    function closePopup(){
+    popup.classList.remove("open-popup");
+}
+    </script>
+    <link rel="stylesheet" href="style.css">
+
+    <h2>Location Map</h2>
+    <div id="map" style="height: 400px; width: 100%;"></div>
+    <script>
+        function map() {
+            
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: 38.2919672967272, lng: -122.45794030172851}, 
+                zoom: 8 
+            });
+
+            
+            var marker = new google.maps.Marker({
+                position: {lat: 38.2919672967272, lng: -122.45794030172851}, 
+                map: map
+                
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh3VTc4R9DTP-ifRRaTPWN938Lk9hxUV0&callback=map" async defer></script>
+</body>
+</html>

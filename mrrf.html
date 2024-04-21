@@ -1,0 +1,70 @@
+<html>
+<h1>Mississippi River Restoration Foundation</h1>
+<img src="wtr.png" class="logo">
+<h2>About</h2>
+<h3></h3>stablished in 1990, the Mississippi River Restoration Foundation has been a leading advocate for the protection and restoration of the Mississippi River for over three decades.</h3>
+<h2>Volunteer Opportunities</h2>
+<h3>
+    River Cleanup Volunteer: Join us in removing litter and debris from the river and its banks to improve water quality and habitat conditions.
+    Habitat Restoration Volunteer: Assist our team in planting native vegetation, restoring wetlands, and implementing erosion control measures to enhance riverbank stability and wildlife habitat.
+    </h3>
+
+
+<button id="showFormButton" class="showFormButton">Volunteer Now</button>
+
+    <div id="contactFormContainer" style="display: none;">
+        <form id="contactForm" action="thank.html">
+            <div>
+                <label for="fname"> First Name:</label>
+                <input type="text" id="fname" placeholder="John" required></input>
+                </div>
+                <br>
+                <div>
+                <label for="lname"> Last Name:</label>
+                <input type="text" id="lname" placeholder="Smith" required></input>
+                </div>
+                <br>
+                <div>
+                <label for="email"> Email:</label>
+                <input type="email" id="email" placeholder="johnsmith@gmail.com" requried></input>
+                </div>
+                <br> 
+                <div>
+                    <label for="phone"> Phone #:</label>
+                    <input type="tel" id="phone" placeholder="(123)-456-7890" requried></input>        
+                </div>
+                <div>
+                    <input type="submit" onclick="openPopup()">
+                    <div class="popup" id="popup">
+                        <img src="tick.png">
+                        <h2>Thank You</h2>
+                        <p>Thank you for submitting your contact information to volunteer with us!</p>
+                        <button type="button" onclick="closePopup()">Ok</button>
+    
+    
+                </a>
+        </form>
+    </div>
+
+    <h2>Location Map</h2>
+    <div id="map" style="height: 400px; width: 100%;"></div>
+    <script>
+        function map() {
+            
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: 31.560329010298457, lng: -91.4034211278986}, 
+                zoom: 8 
+            });
+
+            
+            var marker = new google.maps.Marker({
+                position: {lat:31.560329010298457, lng:-91.4034211278986}, 
+                map: map
+                
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh3VTc4R9DTP-ifRRaTPWN938Lk9hxUV0&callback=map" async defer></script>
+<script src="charity_profile.js"></script>
+<link rel="stylesheet" href="style.css">
+</html>

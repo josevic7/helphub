@@ -1,0 +1,134 @@
+body {
+    background-color:#acbdbe;
+
+  }
+h1{
+    color: #13115c;
+    font-size: 40px;
+    font-family: Poppins;
+}
+
+h2{
+    color: #5e7b69;
+    font-size: 30px;
+    font-family: Poppins;
+
+}
+h3{
+    color: #13115c;
+    font-style: normal;
+    font-family: Manrope;
+    
+}
+h4{
+    color: #28a6a5;
+    font-family: Poppins;
+}
+p{
+    color: #13115c;
+    font-size: 18px;
+    font-family: Poppins;
+}
+.navbar ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    font: bold;
+}
+.navbar a{
+    color:#13115c;
+    text-decoration: none;
+    padding: 18px;
+    display: block;
+    text-align: center;
+    font-size: 19px;
+    font: bold;
+}
+
+.navbar li{
+    float:left
+}
+label{
+    color: #13115c;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid #13115c;
+    
+    
+}
+.button{
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #5e7b69;
+    color: #f0ffff;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: Poppins;
+}
+
+.button2 {background-color: #5e7b69;}
+.button5 {background-color: #5e7b69;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: Poppins;
+}
+
+.container{
+    width: 100%;
+    height:100vh;
+    background: #3c5077;
+
+}
+.popup{
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+}
+.popup img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+.showFormButton{
+  background-color: #5e7b69;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.logo{
+max-width: 356px;
+float: left;
+border-radius: 10px;
+border: 3px solid white; 
+margin-right: 20px;
+}
